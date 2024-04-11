@@ -1,16 +1,12 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
 const Navbar = () => {
     return (
         <nav className="navbar">
             <h1>Yoga Blog</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a
-                    href="/create"
-                    style={{ backgroundColor: "#f1356d", padding: 10, borderRadius: 1 }}
-                >
-                    {" "}
-                    Blog details
-                </a>
+                <Link to="/">Home</Link>
+                <Link to="/create">Blog details</Link>
             </div>
         </nav>
     );
