@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState([
+    const [blog, setBlogs] = useState([
         {
             title: "The Basics",
             body: "Yoga is a vast collection of spiritual techniques and practices aimed at integrating mind, body and spirit to achieve a state of enlightenment or oneness with the universe.",
@@ -24,11 +24,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <BlogList
-                blogs={blogs}
-                title="Here is Yoga Blog"
-                handleDelete={handleDelete}
-            ></BlogList>
+            <BlogList blog={blog} title="Here is Yoga Blog" handleDelete={handleDelete}></BlogList>
         </div>
     );
 };

@@ -3,10 +3,9 @@
 /* base styles */
 * {
     margin: 0;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand";
     color: #333;
 }
-
 .navbar {
     padding: 20px;
     display: flex;
@@ -31,17 +30,76 @@
 }
 .content {
     max-width: 600px;
-    margin: 40px center;
+    margin: 40px auto;
     padding: 20px;
-    text-align: center;
 }
 
-.blogpreview h2 {
-    font-size: 20px;
-    color: crimson;
-    margin-bottom: 8px;
+/* blog previews / list */
+.blogpreview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #fafafa;
 }
-
 .blogpreview:hover {
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blogpreview h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 8px;
+}
+.blogpreview a {
+    text-decoration: none;
+}
+
+/* blog details page */
+.blogdetails h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 10px;
+}
+.blogdetails div {
+    margin: 20px 0;
+}
+.blogdetails button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* create new blog form */
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.create label {
+    text-align: left;
+    display: block;
+}
+.create h1 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+.create button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
 }
